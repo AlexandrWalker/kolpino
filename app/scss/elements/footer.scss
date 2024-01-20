@@ -26,9 +26,15 @@
     }
   }
 
+  &__item-text {
+    white-space: nowrap;
+  }
+
   &__item-list {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 
   &__item-link {
@@ -57,13 +63,16 @@
 
   &__item-img {
     max-width: 337px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
 
   &__menu-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   &__menu-line {

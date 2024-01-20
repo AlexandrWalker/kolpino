@@ -26,6 +26,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 30px;
+      position: relative;
 
       &:last-child .topbar__link>h5 {
         text-align: right;
@@ -158,6 +159,16 @@
     background: var(--green, #34A343);
   }
 
+  &__geo-btn {
+    display: block;
+    pointer-events: none;
+
+    &.show {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
   &__geo-img {
     height: 35px;
     width: auto;
@@ -171,6 +182,18 @@
     font-style: normal;
     font-weight: 600;
     line-height: 185.714%;
+  }
+
+  &__geo-list {
+    &.show {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 2;
+      border-radius: 20px 0 20px 20px;
+      background: var(--green, #34A343);
+    }
   }
 
 }

@@ -25,7 +25,8 @@
       height: 35px;
       background: var(--gray, #404040);
       position: absolute;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       right: -23px;
     }
   }
@@ -53,14 +54,14 @@
 
   &__inner {
     display: flex;
-    align-items: center;
     gap: 20px
   }
 
   &__list {
     display: flex;
     align-items: center;
-    gap: 8px
+    gap: 8px;
+    flex-wrap: wrap;
   }
 
   &__btn {
@@ -93,6 +94,7 @@
     width: auto;
     height: 15px;
     object-fit: cover;
+    margin-top: 5px;
   }
 
   &__img {
@@ -269,6 +271,7 @@
 .vacancy {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   width: 100%;
 
   &__item {
@@ -324,7 +327,8 @@
   }
 
   &__img {
-    width: 167px;
+    max-width: 167px;
+    width: 100%;
     height: auto;
     object-fit: cover;
     background-color: var(--bg, rgba(158, 159, 159, 0.30));

@@ -29,5 +29,10 @@
       });
     })();
 
+    document.getElementById("geoBtn").addEventListener("click", function () {
+      document.getElementById("geoBtn").classList.toggle("show")
+      document.querySelector(".header__geo-list").classList.toggle("show")
+    })
+
   });
 })();
