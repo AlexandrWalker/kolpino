@@ -171,6 +171,14 @@
   .footer__item-img {
     max-width: 300px;
   }
+
+  .search__form-text {
+    max-width: 200px;
+  }
+
+  .search__form-btn {
+    margin: 60px auto 0 auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -249,6 +257,26 @@
   .banner__btn {
     padding: 5px 10px;
   }
+
+  .search__head {
+    margin-bottom: 30px;
+  }
+
+  .search__form-label {
+    gap: 30px;
+  }
+
+  .search__form-text {
+    max-width: 150px;
+  }
+
+  .login__inner {
+    padding: 40px 30px;
+  }
+
+  .login__tab-btn {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -308,6 +336,52 @@
 
   .footer__list {
     flex-direction: column;
+  }
+  
+  .search__form-label {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search__form-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .search__form-label:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .search__form-btn {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .login__inner {
+    padding: 30px 20px;
+  }
+
+  .login__tab {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .login__tab-span {
+    width: 23px;
+    height: 2px;
+  }
+
+  .login__form-text {
+    max-width: fit-content;
+  }
+
+  .login__form-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login__form-link {
+    width: fit-content;
   }
 }
 
