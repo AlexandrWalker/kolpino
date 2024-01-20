@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Колпино</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" style="background-image: url(images/bg.png);">
+      <div class="container-fluid">
+
+        <div class="topbar">
+          <div class="container">
+            <div class="topbar__inner">
+              <div class="topbar__item">
+                <a class="topbar__link" href="#!">
+                  <h5>Помощь</h5>
+                </a>
+              </div>
+              <div class="topbar__item">
+                <a class="topbar__link" href="#!">
+                  <h5>Ваш регион проживания?</h5>
+                </a>
+                <a class="topbar__user" href="#!">
+                  <img class="topbar__user-img" src="images/user.svg" alt="user">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__head">
+              <a class="logo" href="#!">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+              </a>
+              <h1 class="header__title">Работа в Колпино</h1>
+            </div>
+            <div class="header__body">
+              <div class="header__search">
+                <form class="header__search-form" action="#">
+                  <input class="header__search-input" type="search" placeholder="Поиск вакансии или резюме"
+                    tabindex="1">
+                  <input class="header__search-btn" type="submit" value="Найти работу" tabindex="2">
+                  <button class="header__search-setting" type="button" tabindex="3">
+                    <img class="header__search-img" src="images/setting-white.svg" alt="setting">
+                  </button>
+                </form>
+              </div>
+              <div class="header__stat">
+                <div class="header__stat-item">
+                  <img class="header__stat-img" src="images/vacancy.svg" alt="vacancy">
+                  <h2 class="header__stat-text">736 вакансий</h2>
+                </div>
+                <div class="header__stat-item">
+                  <img class="header__stat-img" src="images/resume.svg" alt="vacancy">
+                  <h2 class="header__stat-text">1978 резюме</h2>
+                </div>
+              </div>
+              <div class="header__geo">
+                <a id="geoBtn" class="header__geo-btn" href="#!">
+                  <img class="header__geo-img" src="images/geo-white.svg" alt="geo">
+                </a>
+                <ul class="header__geo-list">
+                  <li class="header__geo-item">
+                    <a class="header__geo-link" href="#!">Металлострой</a>
+                  </li>
+                  <li class="header__geo-item">
+                    <a class="header__geo-link" href="#!">Понтонный</a>
+                  </li>
+                  <li class="header__geo-item">
+                    <a class="header__geo-link" href="#!">Сапёрный</a>
+                  </li>
+                  <li class="header__geo-item">
+                    <a class="header__geo-link" href="#!">Славянка</a>
+                  </li>
+                  <li class="header__geo-item">
+                    <a class="header__geo-link" href="#!">Тельмана</a>
+                  </li>
+                  <li class="header__geo-item">
+                    <a class="header__geo-link" href="#!">Усть-Ижора</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="navigation">
+      <div class="container">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#!">
+              <h3>Последние вакансии</h3>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#!">
+              <h3>Последние резюме</h3>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#!">
+              <h3>Компании</h3>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#!">
+              <img class="navigation__img" src="images/guess.svg" alt="guess">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+<main class="main">
+  <div class="login">
+    <div class="container">
+      <div class="login__inner">
+        <div class="login__head">
+          <img class="login__img" src="images/door.svg" alt="out">
+          Вход
+        </div>
+
+        <div class="login__tab">
+          <button class="login__tab-btn active">Как работодатель</button>
+          <span class="login__tab-span"></span>
+          <button class="login__tab-btn">Как соискатель</button>
+        </div>
+
+        <form class="login__form" action="#">
+          <label class="login__form-label">
+            <h5 class="login__form-text">Логин</h5>
+            <input class="login__form-input" type="text" name="login">
+          </label>
+          <label class="login__form-label">
+            <h5 class="login__form-text">Пароль</h5>
+            <input class="login__form-input" type="password" name="password">
+          </label>
+          <div class="login__form-links">
+            <a class="login__form-link" href="#!">
+              <h5>Регистрация</h5>
+            </a>
+            <a class="login__form-link" href="#!">
+              <h5>Забыли свой пароль ?</h5>
+            </a>
+          </div>
+          <input class="login__form-btn" type="submit" value="Войти">
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="footer__inner">
+      <div class="footer__list">
+        <div class="footer__item">
+          <h6 class="footer__item-text">© 2009-2023</h6>
+          <a class="footer__item-link" href="#!">
+            <h6 class="footer__item-text">«Работа в Колпино»</h6>
+          </a>
+        </div>
+        <div class="footer__item">
+          <h6 class="footer__item-text">Рекламный отдел</h6>
+          <div class="footer__item-list">
+            <a class="footer__item-link" href="tel:244-88-22">
+              <img class="footer__item-icon" src="images/icon-tel.svg" alt="tel"></img>
+              <h6 class="footer__item-text">244-88-22</h6>
+            </a>
+            <a class="footer__item-link" href="tel:944-34-40">
+              <img class="footer__item-icon" src="images/icon-tel.svg" alt="tel"></img>
+              <h6 class="footer__item-text">944-34-40</h6>
+            </a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <a class="footer__item-link" href="mailto:rabota@kolpino.ru">
+            <img class="footer__item-icon footer__item-icon--mail" src="images/icon-mail.svg" alt="email"></img>
+            <h6 class="footer__item-text">rabota@kolpino.ru</h6>
+          </a>
+        </div>
+        <div class="footer__item">
+          <img class="footer__item-img" src="images/cards.png" alt="cards"></img>
+        </div>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#!">
+              <h6 class="footer__menu-text">Правила публикации</h6>
+            </a>
+          </li>
+          <span class="footer__menu-line"></span>
+          <li class="footer__menu-item">
+
+            <a class="footer__menu-link" href="#!">
+              <h6 class="footer__menu-text">Услуги и реклама</h6>
+            </a>
+          </li>
+          <span class="footer__menu-line"></span>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#!">
+              <h6 class="footer__menu-text">Контакты</h6>
+            </a>
+          </li>
+          <span class="footer__menu-line"></span>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#!">
+              <h6 class="footer__menu-text">Пользовательское соглашение</h6>
+            </a>
+          </li>
+          <span class="footer__menu-line"></span>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#!">
+              <h6 class="footer__menu-text">Политика обработки персональных данных</h6>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
