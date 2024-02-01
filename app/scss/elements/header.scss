@@ -77,13 +77,18 @@
   }
 
   &__search {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   &__search-form {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 22px;
+    margin-bottom: 10px;
+
+    &.show {
+      display: flex;
+    }
   }
 
   &__search-input {
@@ -125,6 +130,25 @@
     width: 25.589px;
     height: 25px;
     object-fit: cover;
+  }
+
+  &__tab {
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+
+    &-item {
+      background: transparent;
+      color: var(--white, #fff);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 121.9%;
+
+      &:first-child {
+        padding-right: 10px;
+        border-right: 1px solid var(--white, #fff);
+      }
+    }
   }
 
   &__stat {

@@ -29,10 +29,15 @@
       });
     })();
 
-    document.getElementById("geoBtn").addEventListener("click", function () {
-      document.getElementById("geoBtn").classList.toggle("show")
-      document.querySelector(".header__geo-list").classList.toggle("show")
-    })
+    document.getElementById("btn-vacancy").addEventListener("click", function () {
+      document.getElementById("search-vacancy").classList.add("show");
+      document.getElementById("search-summary").classList.remove("show");
+    });
+
+    document.getElementById("btn-summary").addEventListener("click", function () {
+      document.getElementById("search-vacancy").classList.remove("show");
+      document.getElementById("search-summary").classList.add("show");
+    });
 
   });
 })();

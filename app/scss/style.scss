@@ -194,6 +194,10 @@
 }
 
 .hot {
+  &:first-child .hot__block {
+    border: 0;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;

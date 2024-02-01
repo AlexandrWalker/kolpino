@@ -45,14 +45,26 @@
             </div>
             <div class="header__body">
               <div class="header__search">
-                <form class="header__search-form" action="#">
-                  <input class="header__search-input" type="search" placeholder="Поиск вакансии или резюме"
+                <form class="header__search-form show" id="search-vacancy" action="#">
+                  <input class="header__search-input" type="search" placeholder="Поиск вакансии"
                     tabindex="1">
                   <input class="header__search-btn" type="submit" value="Найти работу" tabindex="2">
                   <button class="header__search-setting" type="button" tabindex="3">
                     <img class="header__search-img" src="images/setting-white.svg" alt="setting">
                   </button>
                 </form>
+                <form class="header__search-form" id="search-summary" action="#">
+                  <input class="header__search-input" type="search" placeholder="Поиск резюме"
+                    tabindex="1">
+                  <input class="header__search-btn" type="submit" value="Найти работу" tabindex="2">
+                  <button class="header__search-setting" type="button" tabindex="3">
+                    <img class="header__search-img" src="images/setting-white.svg" alt="setting">
+                  </button>
+                </form>
+                <div class="header__tab">
+                  <button class="header__tab-item" id="btn-vacancy" tabindex="4">Поиск вакансий</button>
+                  <button class="header__tab-item" id="btn-summary" tabindex="5">Поиск резюме</button>
+                </div>
               </div>
               <div class="header__stat">
                 <div class="header__stat-item">
